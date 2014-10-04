@@ -1,4 +1,5 @@
 'use strict';
+var ladelApp = angular.module('ladelApp', ['ngRoute', 'ngResource', 'ladelAppControllers']);
 
 /**
  * @ngdoc overview
@@ -8,16 +9,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('ladelApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+ladelApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/vote.html',

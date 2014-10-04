@@ -1,10 +1,11 @@
-<div class="content" id="vote">
+<div ng-controller="VoteCtrl" class="content" id="vote">
 
-	<img class="featured-image" src="https://unsplash.it/400?image=428" />
+	<!-- <img class="featured-image" src="https://unsplash.it/400?image=428" /> -->
+	<img class="featured-image" src="{{currentDish.image}}" />
 
 	<div class="item-info">
-		<h1 class="item-name">Raspberries</h1>
-		<h2 class="item-votes">12</h2>
+		<h1 class="item-name">{{currentDish.name}}</h1>
+		<h2 class="item-votes">{{currentDish.votes}}</h2>
 	</div>
     
 </div>
