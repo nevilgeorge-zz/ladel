@@ -57,16 +57,28 @@ html {
             }
             main {
                 padding-top: 52px;
+
+                div.content {
+                    padding: 20px 0;
+                }
             }
             footer {
                 width: 100%;
                 background-color: rgba(29, 207, 155, 0.95);
                 color: #ffe;
+                font-size: 14px;
 
                 div.footer-inner {
                     margin: 0 auto;
                     padding: 15px 0;
                     width: 80%;
+
+                    span {
+
+                        i {
+                            margin-right: 2px;
+                        }
+                    }
                 }
             }
         }
