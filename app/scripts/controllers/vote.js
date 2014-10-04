@@ -24,21 +24,21 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
     var dishes = [
     	{
     		'name': 'Cheesecake',
-    		'image': 'http://upload.wikimedia.org/wikipedia/commons/e/ea/Baked_cheesecake_with_raspberries_and_blueberries.jpg',
+    		'image': 'http://2.bp.blogspot.com/-kP7u_edswCg/UO0_npAOPMI/AAAAAAAAJXc/5Qd05mUBTC4/s640/IMG_20130109_165752.jpg',
     		'user': 'Mo Appalaraju',
     		'votes': 5,
     		'tagline': 'nom nom nom'
     	},
     	{
-    		'name': 'Apple Pie',
-    		'image': 'http://www.wikihow.com/images/f/f0/Bake-an-Apple-Pie-from-Scratch-Intro.jpg',
+    		'name': 'Cinammon apple crumble pie',
+    		'image': 'http://kathdedon.files.wordpress.com/2013/07/instagram-cinnamon-crumble-apple-pie.jpg',
     		'user': 'Patrick Weston',
     		'votes': 8,
     		'tagline': 'so fruity!'
     	},
     	{
     		'name': 'Spaghetti',
-    		'image': 'http://www.cookingclassy.com/wp-content/uploads/2012/11/spaghetti+with+meat+sauce11.jpg',
+    		'image': 'https://c1.staticflickr.com/9/8394/8705344125_4133b3c367_z.jpg',
     		'user': 'Robin Brewer',
     		'votes': 3,
     		'tagline': 'great entre!'
