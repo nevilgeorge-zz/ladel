@@ -15,8 +15,8 @@ ladelApp.config(function ($routeProvider) {
         templateUrl: 'views/vote.html',
         controller: 'VoteCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
+      .when('/post', {
+        templateUrl: 'views/post.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
