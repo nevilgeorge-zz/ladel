@@ -1,4 +1,10 @@
-$font-stack: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: ProximaNova-light;
+    src: url('../fonts/proximanovalight/proximanovalight.woff') format('woff'),
+         url('../fonts/proximanovalight/proximanovalight.ttf') format('truetype');
+}
+
+$font-stack: "ProximaNova-light", Arial, Helvetica, sans-serif;
 $header-height: 52px;
 $footer-height: 46px;
 $content-padding: 40px;
@@ -56,6 +62,7 @@ html {
                     h3 {
                         float: right;
                         letter-spacing: 1px;
+                        font-size: 22px;
                     }
                 }
             }
@@ -72,14 +79,30 @@ html {
                         width: 100%;
                     }
                     div.item-info {
-                        margin: 20px auto 0 auto;
+                        margin: 10px auto 0 auto;
                         color: #444;
 
-                        h1.item-name {
-                            font-size: 20px;
-                        }
                         h2.item-votes {
-                            
+                            float: right;
+                            font-size: 30px;
+
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                        h1.item-name {
+                            font-size: 30px;
+                        }
+                        h3.item-owner {
+                            font-size: 14px;
+                            color: #777;
+                            font-weight: normal;
+                        }
+                        p.item-tagline {
+                            margin-top: 35px;
+                            padding: 0 10px;
+                            text-align: center;
+                            font-size: 25px;
                         }
                     }
                 }
