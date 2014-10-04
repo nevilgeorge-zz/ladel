@@ -1,4 +1,8 @@
 $font-stack: Arial, Helvetica, sans-serif;
+$header-height: 52px;
+$footer-height: 46px;
+$content-padding: 40px;
+$content-height: calc(568px - #{$header-height} - #{$footer-height} - #{$content-padding});
 
 html, body, div, span, h1, h2, h3, h4,
 h5, h6, p, a, img, i, ol, ul, li, form,
@@ -59,7 +63,25 @@ html {
                 padding-top: 52px;
 
                 div.content {
-                    padding: 20px 0;
+                    padding: 20px;
+                    height: $content-height;
+                }
+                div.content#vote {
+
+                    img.featured-image {
+                        width: 100%;
+                    }
+                    div.item-info {
+                        margin: 20px auto 0 auto;
+                        color: #444;
+
+                        h1.item-name {
+                            font-size: 20px;
+                        }
+                        h2.item-votes {
+                            
+                        }
+                    }
                 }
             }
             footer {
