@@ -8,6 +8,6 @@
  * Controller of the ladelApp
  */
 
-ladelControllers.controller('PostCtrl', function ($scope) {
+ladelAppControllers.controller('PostCtrl', function ($scope) {
     console.log('Post new');
   });

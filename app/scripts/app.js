@@ -21,7 +21,7 @@ ladelApp.config(function ($routeProvider) {
       })
       .when('/winners', {
         templateUrl: 'views/winners.html',
-        controller: 'AboutCtrl'
+        controller: 'WinnersCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -3,17 +3,17 @@
 	<h1 class="page-header">Winners</h1>
 	<div class="winners-list-wrapper">
 	    <ul class="winners-list">
-	    	<li>
-	    		<img class="featured-image" src="https://unsplash.it/200?image=428" />
+	    	<li ng-repeat="dish in dishes">
+	    		<img class="featured-image" src="{{dish.image}}" />
 	    		<div class="item-info">
-	    			<h3 class="item-title">Raspberries</h3>
-	    			<h5 class="item-owner">by Jon Rovira</h5>
+	    			<h3 class="item-title">{{dish.name}}</h3>
+	    			<h5 class="item-owner">by {{dish.user}}</h5>
 	    		</div>
 	    		<div class="item-likes">
-	    			<span class="item-votes"><i class="fa fa fa-heart"></i>89</span>
+	    			<span class="item-votes"><i class="fa fa fa-heart"></i>{{dish.votes}}</span>
 	    		</div>
 	    	</li>
-	    	<li>
+	    	<!-- <li>
 	    		<img class="featured-image" src="https://unsplash.it/200?image=428" />
 	    		<div class="item-info">
 	    			<h3 class="item-title">Raspberries</h3>
@@ -42,7 +42,7 @@
 	    		<div class="item-likes">
 	    			<span class="item-votes"><i class="fa fa fa-heart"></i>37</span>
 	    		</div>
-	    	</li>
+	    	</li> -->
 	    </ul>
 	</div>
 

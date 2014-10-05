@@ -1,0 +1,1 @@
+var ladelAppControllers = angular.module('ladelAppControllers', []);
