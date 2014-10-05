@@ -3,10 +3,10 @@
 	<h1 class="page-header">Post your creation</h1>
     <form>
     	<button name="photo"><input type="file" value="Upload photo"></button>
-    	<input name="title" placeholder="Title" required="required">
-    	<input name="name" placeholder="Your Name" required="required">
-    	<textarea name="tagline" placeholder="Tagline" required="required" maxlength="100"></textarea>
-    	<input id="input-submit" type="submit" value="Post">
+    	<input name="title" placeholder="Title" required="required" ng-model="title">
+    	<input name="name" placeholder="Your Name" required="required" ng-model="user">
+    	<textarea name="tagline" placeholder="Tagline" required="required" maxlength="100" ng-model="tagline"></textarea>
+    	<input id="input-submit" type="submit" value="Post" ng-click="save()">
     </form>
 
 </div>
