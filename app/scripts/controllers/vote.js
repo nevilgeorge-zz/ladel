@@ -30,7 +30,7 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
     		'tagline': 'nom nom nom'
     	},
     	{
-    		'name': 'Cinammon apple crumble pie',
+    		'name': 'Apple Pie',
     		'image': 'http://kathdedon.files.wordpress.com/2013/07/instagram-cinnamon-crumble-apple-pie.jpg',
     		'user': 'Patrick Weston',
     		'votes': 8,
