@@ -17,7 +17,7 @@ ladelApp.config(function ($routeProvider) {
       })
       .when('/post', {
         templateUrl: 'views/post.html',
-        controller: 'AboutCtrl'
+        controller: 'PostCtrl'
       })
       .when('/winners', {
         templateUrl: 'views/winners.html',
