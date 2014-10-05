@@ -3,7 +3,7 @@
 	<h1 class="page-header">Winners</h1>
 	<div class="winners-list-wrapper">
 	    <ul class="winners-list">
-	    	<li ng-repeat="dish in dishes">
+	    	<li ng-repeat="dish in dishes | orderBy:orderProp:true">
 	    		<img class="featured-image" src="{{dish.image}}" />
 	    		<div class="item-info">
 	    			<h3 class="item-title">{{dish.name}}</h3>
