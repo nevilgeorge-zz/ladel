@@ -172,7 +172,65 @@ html {
                         }
                     }
                 }
-                div.conten#winners {}
+                div.content#winners {
+
+                    div.winners-list-wrapper {
+                        padding: 5px;
+                        height: 350px;
+                        background-color: #eee;
+                        border-radius: 2px;
+
+                        ul.winners-list {
+                            margin: 0 auto;
+                            list-style: none;
+
+                            li {
+                                margin-bottom: 5px;
+                                width: 100%;
+                                overflow: auto;
+                                background-color: #fff;
+                                border: 1px solid #ddd;
+                                border-radius: 3px;
+
+                                img.featured-image {
+                                    float: left;
+                                    width: 20%;
+                                    border-radius: 2px 0 0 2px;
+                                }
+                                div.item-info {
+                                    float: left;
+                                    padding: 5px;
+                                    width: 45%;
+
+                                    h3.item-title {
+                                        font-size: 16px;
+                                        color: #444;
+                                    }
+                                    h5.item-owner {
+                                        font-size: 13px;
+                                        color: #777;
+                                        font-weight: normal;
+                                    }
+                                }
+                                div.item-likes {
+                                    float: left;
+                                    width: 27%;
+                                    padding: 5px;
+
+                                    span {
+                                        float: right;
+                                        font-size: 18px;
+
+                                        i {
+                                            margin-right: 5px; 
+                                            color: $primary-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             footer {
                 width: 100%;
