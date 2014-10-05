@@ -22,4 +22,22 @@ $(document).ready(function() {
 			$('header nav ul').slideUp();
 		}, 1000);
 	});
+	// tinder finger swiping
+	$('div#vote div.item-info').touchwipe({
+	     wipeLeft: function() { 
+	     	alert("left");
+	     },
+	     wipeRight: function() {
+	     	alert("right"); 
+	     },
+	     wipeUp: function() { 
+	     	
+	     },
+	     wipeDown: function() { 
+	     	
+	     },
+	     min_move_x: 20,
+	     min_move_y: 20,
+	     preventDefaultEvents: true
+	});
 });
