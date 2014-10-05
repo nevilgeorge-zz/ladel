@@ -41,7 +41,7 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
     		'image': 'https://c1.staticflickr.com/9/8394/8705344125_4133b3c367_z.jpg',
     		'user': 'Robin Brewer',
     		'votes': 3,
-    		'tagline': 'great entre!'
+    		'tagline': 'great entree!'
     	}
     ];
 
