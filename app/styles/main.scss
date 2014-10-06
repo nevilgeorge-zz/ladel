@@ -100,21 +100,28 @@ html {
                             position: absolute;
                             width: 100%;
                         }
-                        i.like-option {
+                        i {
                             position: absolute;
                             top: 110px;
                             font-size: 45px;
-                            color: rgba(255, 255, 255, 0.9);
+                            color: rgba(255, 255, 255, 0.2);
                             cursor: pointer;
                         }
-                        i.like-option:hover {
-                            color: $primary-color;
-                        }
                         i.dislike {
-                            left: 5px;
+                            left: 70px;
                         }
                         i.like {
-                            right: 5px;;
+                            left: 140px;
+                        }
+                    }
+                    div.image-and-likes-container:hover {
+
+                        i {
+                            color: $primary-color;
+                            opacity: 0.5;
+                        }
+                        i:hover {
+                            opacity: 1.0;
                         }
                     }
                     div.item-info {
@@ -128,6 +135,10 @@ html {
                             i {
                                 margin-right: 5px;
                                 color: $primary-color;
+                            }
+                            i.liked {
+                                display: none;
+                                opacity: 0;
                             }
                         }
                         h1.item-title {

@@ -100,13 +100,23 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
         $('i.dislike').click(function() {
             var newIndex = getRandomInt(0, dishes.length);
             $scope.currentDish = dishes[newIndex];
-            $('h3.header-title').click();
+            $('div.content').fadeTo(200, 0);
+            setTimeout(function() {
+                $('h3.header-title').click();
+            }, 300);
         });
         $('i.like').click(function() {
             $scope.currentDish.votes += 1;
             var newIndex = getRandomInt(0, dishes.length);
             $scope.currentDish = dishes[newIndex];
-            $('h3.header-title').click();
+            $('h2.item-votes i.unliked').hide();
+            $('h2.item-votes i.liked').show();
+            $('h2.item-votes i.liked').fadeTo(200, 1.0, function() {
+                $('div.content').fadeTo(200, 0);
+            });
+            setTimeout(function() {
+                $('h3.header-title').click();
+            }, 600);
         });
 
 });

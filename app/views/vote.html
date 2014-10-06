@@ -2,13 +2,17 @@
 
 	<div class="image-and-likes-container">
 		<img class="featured-image" src="{{currentDish.image}}" />
-			<i class="like-option dislike fa fa-thumbs-down"></i>
-			<i class="like-option like fa fa-thumbs-up"></i>
+		<i class="dislike fa fa-heart-o"></i>
+		<i class="like fa fa-heart"></i>
 	</div>
 
 	<div class="item-info">
 
-		<h2 class="item-votes"><i class="fa fa fa-heart"></i>{{currentDish.votes}}</h2>
+		<h2 class="item-votes">
+			<i class="unliked fa fa fa-heart-o"></i>
+			<i class="liked fa fa fa-heart"></i>
+			<span>{{currentDish.votes}}</span>
+		</h2>
 		<h1 class="item-title">{{currentDish.name}}</h1>
 		<h3 class="item-owner">by {{currentDish.user}}</h3>
 		<p class="item-tagline">"{{currentDish.tagline}}"</p>
