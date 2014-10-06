@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "express": "^4.9.5",
+    "grunt-deploy": "^0.1.7",
     "gzippo": "^0.2.0"
   },
   "devDependencies": {
@@ -39,6 +40,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "postinstall": "echo postinstall time; ./node_modules/grunt-cli/bin/grunt <your task name>",
     "test": "grunt test"
   }
 }

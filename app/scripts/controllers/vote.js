@@ -57,10 +57,13 @@ var getRandomInt = function(min, max) {
 
 
 
+/*
+ * Events that don't deal with controller
+ */
+
 $(document).ready(function() {
     // menu animation on click
     $('header nav i').click(function() {
-        console.log('hi');
         if( !$('header nav ul').is(':visible') ) {
             $('header nav ul').slideDown();
 
@@ -88,7 +91,7 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
     $scope.currentDish = dishes[getRandomInt(0, dishes.length)];
 
     /*
-     * Events
+     * Events that do deail with controller
      */
 
     $(document).ready(function() {

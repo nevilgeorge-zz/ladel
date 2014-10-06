@@ -9,7 +9,6 @@
  */
 
 ladelAppControllers.controller('PostCtrl', function ($scope) {
-    console.log('Post new');
     
     $scope.save = function() {
     	var temp = {

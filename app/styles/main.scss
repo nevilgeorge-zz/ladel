@@ -1,7 +1,7 @@
 @font-face {
     font-family: ProximaNova-light;
-    src: url('../fonts/proximanovalight/proximanovalight.woff') format('woff'),
-         url('../fonts/proximanovalight/proximanovalight.ttf') format('truetype');
+    src: url('/fonts/proximanovalight/proximanovalight.woff') format('woff'),
+         url('/fonts/proximanovalight/proximanovalight.ttf') format('truetype');
 }
 
 $font-stack: "ProximaNova-light", Arial, Helvetica, sans-serif;
@@ -21,6 +21,7 @@ label, table, caption, {
 
 html {
     font-family: $font-stack;
+    background-color: #fff;
 
     body {
 
