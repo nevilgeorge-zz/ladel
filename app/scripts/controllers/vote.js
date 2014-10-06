@@ -57,6 +57,27 @@ var getRandomInt = function(min, max) {
 
 
 
+$(document).ready(function() {
+    // menu animation on click
+    $('header nav i').click(function() {
+        console.log('hi');
+        if( !$('header nav ul').is(':visible') ) {
+            $('header nav ul').slideDown();
+
+            $('header nav ul li a').click(function() {
+                setTimeout(function() {
+                    $('header nav ul').slideUp();
+                }, 1000);
+            });
+        }
+        else {
+            $('header nav ul').slideUp();
+        }
+    });
+});
+
+
+
 /*
  * Angular controller: VoteCtrl
  */
@@ -71,19 +92,6 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
      */
 
     $(document).ready(function() {
-
-        // menu animation on click
-        $('header nav i').click(function() {
-            if( !$('header nav ul').is(':visible') ) {
-                $('header nav ul').slideDown();
-                setTimeout(function() {
-                    // $('header nav ul').slideUp();
-                }, 1000);
-            }
-            else {
-                $('header nav ul').slideUp();
-            }
-        });
 
 
         // tinder finger swiping
