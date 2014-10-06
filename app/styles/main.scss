@@ -33,6 +33,7 @@ html {
                 width: 100%;
                 background-color: $primary-color;
                 color: $text-color;
+                z-index: 10;
 
                 nav {
                     margin: 0 auto;
@@ -89,8 +90,32 @@ html {
                 }
                 div.content#vote {
 
-                    img.featured-image {
+                    div.image-and-likes-container {
+                        position: relative;
                         width: 100%;
+                        height: 265px;
+                        overflow: auto;
+
+                        img.featured-image {
+                            position: absolute;
+                            width: 100%;
+                        }
+                        i.like-option {
+                            position: absolute;
+                            top: 110px;
+                            font-size: 45px;
+                            color: rgba(255, 255, 255, 0.9);
+                            cursor: pointer;
+                        }
+                        i.like-option:hover {
+                            color: $primary-color;
+                        }
+                        i.dislike {
+                            left: 5px;
+                        }
+                        i.like {
+                            right: 5px;;
+                        }
                     }
                     div.item-info {
                         margin: 10px auto 0 auto;

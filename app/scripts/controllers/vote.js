@@ -97,28 +97,18 @@ ladelAppControllers.controller('VoteCtrl', function ($scope) {
     $(document).ready(function() {
 
 
-        // tinder finger swiping
-        $('div#vote div.item-info').touchwipe({
-             wipeLeft: function() { 
-                var newIndex = getRandomInt(0, dishes.length);
-                $scope.currentDish = dishes[newIndex];
-             },
-             wipeRight: function() {
-                $scope.currentDish.votes += 1;
-                var newIndex = getRandomInt(0, dishes.length);
-                $scope.currentDish = dishes[newIndex];
-
-             },
-             wipeUp: function() { 
-                
-             },
-             wipeDown: function() { 
-                
-             },
-             min_move_x: 20,
-             min_move_y: 20,
-             preventDefaultEvents: true
+        $('i.dislike').click(function() {
+            var newIndex = getRandomInt(0, dishes.length);
+            $scope.currentDish = dishes[newIndex];
+            $('h3.header-title').click();
         });
+        $('i.like').click(function() {
+            $scope.currentDish.votes += 1;
+            var newIndex = getRandomInt(0, dishes.length);
+            $scope.currentDish = dishes[newIndex];
+            $('h3.header-title').click();
+        });
+
 });
 
   });

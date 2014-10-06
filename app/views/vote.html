@@ -1,7 +1,10 @@
 <div ng-controller="VoteCtrl" class="content" id="vote">
 
-	<!-- <img class="featured-image" src="https://unsplash.it/400?image=428" /> -->
-	<img class="featured-image" src="{{currentDish.image}}" />
+	<div class="image-and-likes-container">
+		<img class="featured-image" src="{{currentDish.image}}" />
+			<i class="like-option dislike fa fa-thumbs-down"></i>
+			<i class="like-option like fa fa-thumbs-up"></i>
+	</div>
 
 	<div class="item-info">
 
